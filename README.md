@@ -1,2 +1,2 @@
-# rest-voting
-The app to voting for restaurant where to have lunch
+# Restaurant voting
+**Web application to voting for a restaurant where to have lunch**
