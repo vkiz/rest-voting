@@ -1,7 +1,7 @@
 package com.vkiz.voting.model;
 
 import com.fasterxml.jackson.annotation.JsonView;
-import com.voting.View;
+import com.vkiz.voting.View;
 import org.hibernate.annotations.BatchSize;
 import org.springframework.util.CollectionUtils;
 
