@@ -6,8 +6,8 @@ DELETE FROM users;
 ALTER SEQUENCE global_seq RESTART WITH 100000;
 
 INSERT INTO users (email, password)
-VALUES ('user@gmail.com', 'user'),
-       ('admin@gmail.com', 'admin');
+VALUES ('user@gmail.com', '{noop}user'),
+       ('admin@gmail.com', '{noop}admin');
 
 INSERT INTO user_roles (role, user_id)
 VALUES ('ROLE_USER', 100000),
@@ -17,9 +17,7 @@ VALUES ('ROLE_USER', 100000),
 INSERT INTO restaurants (name)
 VALUES ('McDonalds'),
        ('KFC'),
-       ('Subway'),
-       ('Burger King'),
-       ('Dodo Pizza');
+       ('Subway');
 
 INSERT INTO dishes (date, name, price, restaurant_id)
 VALUES ('2020-04-05', 'Hamburger', 150, 100002),
@@ -31,9 +29,9 @@ VALUES ('2020-04-05', 'Hamburger', 150, 100002),
        ('2020-04-07', 'Apple pie', 100, 100002),
        ('2020-04-07', 'Cookie', 100, 100002),
        ('2020-04-07', 'Croissant', 150, 100003),
-       ('2020-04-07', 'Coffee', 150, 100003),
-       ('2020-04-07', 'Tea', 100, 100004),
-       ('2020-04-07', 'Water', 50, 100004);
+       ('2020-04-07', 'Hamburger', 160, 100003),
+       ('2020-04-07', 'Cheeseburger', 160, 100004),
+       ('2020-04-07', 'Fruit salad', 110, 100004);
 
 INSERT INTO dishes (name, price, restaurant_id)
 VALUES ('Hamburger', 150, 100002),
