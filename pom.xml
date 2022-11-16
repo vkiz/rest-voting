@@ -30,7 +30,7 @@
         <javax-el.version>3.0.1-b11</javax-el.version>
 
         <!-- Jackson -->
-        <jackson-json.version>2.10.3</jackson-json.version>
+        <jackson-json.version>2.12.7.1</jackson-json.version>
 
         <!-- Tomcat -->
         <tomcat.version>9.0.33</tomcat.version>
